@@ -28,6 +28,6 @@ console.log('A palavra Abacaxi tem '+ contavogal('Abacaxi')+' vogais')
 //Exemplo usando um formulario
 
 function contaVogal(): void{
-  let palavra = (<HTMLInputElement>(document.getElementById("word"))).value;
+  let palavra:HTMLInputElement = (document.getElementById("word")).value;
   console.log('A palavra '+ palavra +' tem '+ contavogal(palavra)+'vogais');
 }
